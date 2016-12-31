@@ -88,6 +88,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([[segue identifier]isEqualToString:@"ShowDetails"]) {
+        NSLog(@"it is inside segue");
      
         DetailViewController *details = [segue destinationViewController];
         NSIndexPath *indexpath = [self.contentTBV indexPathForCell:
